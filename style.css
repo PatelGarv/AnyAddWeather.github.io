@@ -68,6 +68,15 @@ nav{
     }
 }
 
+@media screen and (max-width:920px) {
+    table{
+        display: none;
+    }
+    #table_title{
+        display: none;
+    }
+}
+
 .form-control {
     display: block;
     width: 100%;
