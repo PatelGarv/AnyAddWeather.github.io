@@ -68,7 +68,7 @@ const tableData = (city) =>{
       document.getElementById(`${city}`+`-Sunrise`).innerHTML = `<small style="10px">${sRice.getHours()-7}:${sRice.getMinutes()}:${sRice.getSeconds()} AM</small>`;
       sSet = new Date(response.sunset);
       document.getElementById(`${city}`+`-Sunset`).innerHTML = `<small style="10px">${(sSet.getHours()+4)-12}:${sSet.getMinutes()}:${sSet.getSeconds()} PM</small>`;
-      document.getElementById(`${city}`+`-Wind_Speed`).innerHTML = response.wind_speed+ " Km/h";
+      document.getElementById(`${city}`+`-Wind_Speed`).innerHTML = response.wind_speed+ " KmH";
       document.getElementById(`${city}`+`-Wind_degrees`).innerHTML = response.wind_degrees+ "°";
     }).catch((err) => console.error(err));
 };
