@@ -1,3 +1,8 @@
+.my-5 {
+    margin-top: 4rem!important;
+    margin-bottom: 1rem!important;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -42,9 +47,13 @@ body #displayWeather {
 
 nav{
     z-index: 2;
-    height: 7vh;
+    height: 55px;
         background-color:rgb(219, 214, 255);
 
+}
+
+.weather-nav-cont{
+    display: flex;
 }
 
 .navbar-brand {
@@ -56,18 +65,29 @@ nav{
     color: black !important;
 }
 
-.btn:hover {
-    color: var(--bs-btn-hover-color);
-    background-color: #192c8769;
-    border-color: var(--bs-btn-hover-border-color);
-}
+@media screen and (max-width:523px) {
 
-@media screen and (max-width:477px) {
+    .weather-nav-cont{
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+    .navbar-toggler {
+        transform: translateX(-15px);
+    }
+
+    .d-flex{
+        width: 100vw;
+        display:flex;
+        justify-content: space-around;
+    }
     .searchbar-n-btn{
-        margin-top: 17px;
+        width: 94vw;
+        display:flex;
+        justify-content: center;
+        margin-top: 15px;
     }
 }
-
 @media screen and (max-width:920px) {
     table{
         display: none;
@@ -75,6 +95,13 @@ nav{
     #table_title{
         display: none;
     }
+}
+
+
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #192c8769;
+    border-color: var(--bs-btn-hover-border-color);
 }
 
 .form-control {
@@ -118,10 +145,19 @@ nav{
     background-color: rgba(160, 153, 255, 0.626)!important;
 }
 
+.container-fluid{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
 @media screen and (max-width:990px) {
+
+
+
     .navbar-collapse {
         width: 99vw;
-        padding: 1vw 1vh;
+        padding: 1vw 1vw;
         background-color: rgb(219, 214, 255);
         border-radius: 10px;
     }
