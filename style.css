@@ -62,6 +62,12 @@ nav{
     border-color: var(--bs-btn-hover-border-color);
 }
 
+@media screen and (max-width:477px) {
+    .searchbar-n-btn{
+        margin-top: 17px;
+    }
+}
+
 .form-control {
     display: block;
     width: 100%;
