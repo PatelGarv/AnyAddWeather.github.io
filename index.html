@@ -15,37 +15,23 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Weather App</a>
 
-        <div class="searchbar-n-btn">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              id="Cityinput"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit" id="submit">
-              Search
-            </button>
-          </form>
+        <div class="weather-nav-cont">
+          <a class="navbar-brand" href="#">Weather App</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-
-
-
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -79,13 +65,27 @@
             </li>
           </ul>
         </div>
+
+        <div class="searchbar-n-btn">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              id="Cityinput"
+              type="search"
+              placeholder="Search your place"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit" id="submit">
+              Search
+            </button>
+          </form>
+        </div>
+
       </div>
     </nav>
 
     <section class="main">
-      <h1 class="my-5 text-center">
-        Weather<span id="cityName"></span>
-      </h1>
+      <h1 class="my-5 text-center">Weather<span id="cityName"></span></h1>
       <main>
         <div
           id="displayWeather"
@@ -98,14 +98,57 @@
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  <span id="temp2"> </span><small style="font-size: 18px; color: rgb(219 214 255) !important;" class="text-muted fw-light"> &#8451;</small>
-                  <img class="temp-img" src="https://i.pinimg.com/originals/36/44/24/364424375b4363112bce7cccd18a2d40.gif" alt="">
+                  <span id="temp2"> </span
+                  ><small
+                    style="font-size: 18px; color: rgb(219 214 255) !important"
+                    class="text-muted fw-light"
+                  >
+                    &#8451;</small
+                  >
+                  <img
+                    class="temp-img"
+                    src="https://i.pinimg.com/originals/36/44/24/364424375b4363112bce7cccd18a2d40.gif"
+                    alt=""
+                  />
                 </h1>
                 <div class="temp-cont">
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>Temperature : <span id="temp"></span><small style="font-size: 12px; color: rgb(219 214 255) !important;" class="text-muted fw-light"> &#8451;</small></li>
-                    <li>Min Temperature : <span id="min_temp"></span><small style="font-size: 12px; color: rgb(219 214 255) !important;" class="text-muted fw-light"> &#8451;</small></li>
-                    <li>Max Temperature : <span id="max_temp"></span><small style="font-size: 12px; color: rgb(219 214 255) !important;" class="text-muted fw-light"> &#8451;</small></li>
+                    <li>
+                      Temperature : <span id="temp"></span
+                      ><small
+                        style="
+                          font-size: 12px;
+                          color: rgb(219 214 255) !important;
+                        "
+                        class="text-muted fw-light"
+                      >
+                        &#8451;</small
+                      >
+                    </li>
+                    <li>
+                      Min Temperature : <span id="min_temp"></span
+                      ><small
+                        style="
+                          font-size: 12px;
+                          color: rgb(219 214 255) !important;
+                        "
+                        class="text-muted fw-light"
+                      >
+                        &#8451;</small
+                      >
+                    </li>
+                    <li>
+                      Max Temperature : <span id="max_temp"></span
+                      ><small
+                        style="
+                          font-size: 12px;
+                          color: rgb(219 214 255) !important;
+                        "
+                        class="text-muted fw-light"
+                      >
+                        &#8451;</small
+                      >
+                    </li>
                   </ul>
                 </div>
                 <button
@@ -124,13 +167,25 @@
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  <span id="wind_speed2"> </span><small style="font-size: 18px; color: rgb(219 214 255) !important;" class="text-muted fw-light"> Km/h</small>
-                  <img class="wind-img" src="https://media.tenor.com/LCRBtEBUC6kAAAAC/ypf-energia.gif" alt="">
+                  <span id="wind_speed2"> </span
+                  ><small
+                    style="font-size: 18px; color: rgb(219 214 255) !important"
+                    class="text-muted fw-light"
+                  >
+                    Km/h</small
+                  >
+                  <img
+                    class="wind-img"
+                    src="https://media.tenor.com/LCRBtEBUC6kAAAAC/ypf-energia.gif"
+                    alt=""
+                  />
                 </h1>
                 <div class="wind-cont">
                   <ul class="list-unstyled mt-3 mb-4">
                     <li>Wind Speed : <span id="wind_speed"></span>Km/h</li>
-                    <li>Wind Degree : <span id="wind_degrees"></span><sup> °</sup></li>
+                    <li>
+                      Wind Degree : <span id="wind_degrees"></span><sup> °</sup>
+                    </li>
                   </ul>
                   <ul class="list-unstyled mt-3 mb-4">
                     <li>Sunrise : <span id="sunrise"></span></li>
@@ -150,14 +205,46 @@
               </div>
               <div class="card-body">
                 <h1 class="card-title pricing-card-title">
-                  <span id="humidity2"> </span><small style="font-size: 18px; color: rgb(219 214 255) !important;" class="text-muted fw-light"> %</small>
-                  <img class="Humid-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ayy-xi3LJQxZ9wI8XK78lb0deX5OwTq4TQ&usqp=CAU" alt="">
+                  <span id="humidity2"> </span
+                  ><small
+                    style="font-size: 18px; color: rgb(219 214 255) !important"
+                    class="text-muted fw-light"
+                  >
+                    %</small
+                  >
+                  <img
+                    class="Humid-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0ayy-xi3LJQxZ9wI8XK78lb0deX5OwTq4TQ&usqp=CAU"
+                    alt=""
+                  />
                 </h1>
                 <div class="humid-cont">
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>Cloud PCT : <span id="cloud_pct"></span> μm </li>
-                    <li>Feels Like : <span id="feels_like"></span><small style="font-size: 15px; color: rgb(219 214 255) !important;" class="text-muted fw-light"> &#8451;</small></li>
-                    <li>Humidity : <span id="humidity"></span> <small style="font-size: 13px; color: rgb(219 214 255) !important;" class="text-muted fw-light"> %</small> </li>
+                    <li>Cloud PCT : <span id="cloud_pct"></span> μm</li>
+                    <li>
+                      Feels Like : <span id="feels_like"></span
+                      ><small
+                        style="
+                          font-size: 15px;
+                          color: rgb(219 214 255) !important;
+                        "
+                        class="text-muted fw-light"
+                      >
+                        &#8451;</small
+                      >
+                    </li>
+                    <li>
+                      Humidity : <span id="humidity"></span>
+                      <small
+                        style="
+                          font-size: 13px;
+                          color: rgb(219 214 255) !important;
+                        "
+                        class="text-muted fw-light"
+                      >
+                        %</small
+                      >
+                    </li>
                   </ul>
                 </div>
                 <button type="button" class="w-100 btn btn-lg btn-primary">
